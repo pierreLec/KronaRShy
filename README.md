@@ -1,7 +1,7 @@
 # KronaRShy
 =================
 
-`KronaR` is an shyny app to integrate KronaR  in an iframe in another shiny app
+`KronaR` is a shyny app to integrate KronaR  in an iframe in another shiny app
 where paramater is the local pathway to an temporary file
 Usage
 =================
