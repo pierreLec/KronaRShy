@@ -6,10 +6,8 @@ shinyServer(function(input, output, session) {
 
 	output$KronaR <- renderKronaR({
 		values$query <- parseQueryString(session$clientData$url_search)
-                importT <-"/tmp/text.txt"
-                dat <-read.csv(values$query[["parameter"]],header = FALSE, sep = "\t")
-
-		KronaR(dat)
+		
+		KronaR(values$query[["parameter"]])
         })
 	
 })
