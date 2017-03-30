@@ -1,4 +1,8 @@
-library(KronaR)
+if (!require(KronaR)) {
+ devtools::install_github('pierreLec/KronaR')
+ library(KronaR)
+}
+
 shinyServer(function(input, output, session) {
 	
 	#parameter post of temporary shaman file of Krona data 	
